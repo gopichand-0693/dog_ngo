@@ -223,17 +223,17 @@ var HERO_SLIDES = [
   {
     src: "/static/img/hero-farm-dog.jpg?v=1",
     alt: "Indie dog standing on a farm ledge looking at the camera",
-    position: "center 45%"
+    position: "72% 45%"
   },
   {
     src: "/static/img/hero-beach-dogs.jpg?v=1",
     alt: "Street dogs on a sandy beach with palms behind them",
-    position: "center 55%"
+    position: "70% 55%"
   },
   {
     src: "/static/img/hero-sidewalk-dog.jpg?v=1",
     alt: "Indie dog resting on a sunlit sidewalk",
-    position: "center 60%"
+    position: "68% 60%"
   }
 ];
 function initHeroCarousel(root) {

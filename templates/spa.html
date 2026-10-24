@@ -3,13 +3,13 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>ScoobyHouse · Hyderabad & Bangalore dog shelters</title>
   <meta name="description" content="ScoobyHouse is a directory of dog shelters and rescue NGOs across Hyderabad and Bangalore — find help, adopt, volunteer.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="{% static 'css/site.css' %}?v=46">
+  <link rel="stylesheet" href="{% static 'css/site.css' %}?v=49">
 </head>
 <body>
   <div class="grain" aria-hidden="true"></div>
@@ -55,17 +55,6 @@
     </div>
     <div class="header-bar header-bar-white">
       <div class="shell site-nav-row">
-        <nav class="site-nav" aria-label="Site">
-          <a href="/" data-link>Home</a>
-          <a href="/about-us/" data-link>About Us</a>
-          <a href="/our-work/" data-link>Our Work</a>
-          <a href="/get-involved/" data-link>Get Involved</a>
-          <a href="/csr/" data-link>CSR</a>
-          <a href="/faqs/" data-link>FAQs</a>
-          <a href="/contact/" data-link>Contact</a>
-          <a href="/shelters/?service=adoption" data-link>Adopt</a>
-          <a href="/donate/" data-link>Donate</a>
-        </nav>
         <form class="site-search" id="header-search" role="search" aria-label="Search shelters">
           <input
             class="site-search-input"
@@ -83,6 +72,23 @@
             <span>Search</span>
           </button>
         </form>
+        <input type="checkbox" id="nav-menu" class="nav-menu-input">
+        <label class="nav-menu-btn" for="nav-menu">
+          <span class="nav-menu-bars" aria-hidden="true"></span>
+          <span class="nav-menu-open">Menu</span>
+          <span class="nav-menu-close">Close</span>
+        </label>
+        <nav class="site-nav" aria-label="Site">
+          <a href="/" data-link>Home</a>
+          <a href="/about-us/" data-link>About Us</a>
+          <a href="/our-work/" data-link>Our Work</a>
+          <a href="/get-involved/" data-link>Get Involved</a>
+          <a href="/csr/" data-link>CSR</a>
+          <a href="/faqs/" data-link>FAQs</a>
+          <a href="/contact/" data-link>Contact</a>
+          <a href="/shelters/?service=adoption" data-link>Adopt</a>
+          <a href="/donate/" data-link>Donate</a>
+        </nav>
       </div>
     </div>
   </header>
@@ -208,7 +214,7 @@
     </div>
   </footer>
 
-  <script type="module" src="{% static 'app/bundle.js' %}?v=5"></script>
+  <script type="module" src="{% static 'app/bundle.js' %}?v=6"></script>
   <script>
     (function () {
       setTimeout(function () {

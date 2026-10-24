@@ -173,6 +173,8 @@ document.addEventListener("click", (event) => {
   if (url.origin !== window.location.origin) return;
 
   event.preventDefault();
+  const menu = document.getElementById("nav-menu");
+  if (menu) menu.checked = false;
   if (url.pathname + url.search !== window.location.pathname + window.location.search) {
     history.pushState({}, "", url.pathname + url.search);
   }
